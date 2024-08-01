@@ -1,9 +1,6 @@
 
 import mysql.connector
-# from mysql.connector import Error
 
-# def create_database():
-# conn = None
 
 try:
 
@@ -12,12 +9,10 @@ try:
              host="localhost",
              user="root",
              password="567567@ShahShah",
-            #  database="alx_book_store"
+        
          )
     
-        # if conn.is_connected():
-        #     print('Connected to MySQL server')
-
+        
 
         # Creating a cursor object named mycursor
         mycursor = conn.cursor()
@@ -28,8 +23,7 @@ try:
 
 except mysql.connector.Error:
         print("error")
-# except  mysql.connector.Error as e:
-#         print(f"Error: {e}")
+
     
 
 finally:
@@ -39,4 +33,3 @@ finally:
             print('MySQL connection is closed')
 
 
-# create_database()
