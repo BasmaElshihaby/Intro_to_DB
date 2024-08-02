@@ -1,1 +1,3 @@
-SELECT * FROM alx_book_store.books;
+SELECT *
+FROM INFORMATION_SCHEMA.COLUMNS
+WHERE table_name = 'books'
